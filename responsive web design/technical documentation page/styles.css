@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+    font-family: 'Cabin', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;   
+    margin: 0px;  /* removes default style */
+    display: flex;  /* enables flex content for its children */
+    box-sizing: border-box;
+    transition: ease all .5s;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+  }
+
+#navbar {
+    width: 190px;
+  }
+
+#main-doc {
+    flex-grow: 1;
+  }
+
+header {
+    font-size: 1.7em;
+    padding: 25px 0px;
+}
+
+main {
+    padding: 10px;
+}
+
+ul {
+    padding: 20px 45px 10px
+}
+
+ul > li {
+    padding: 5px;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a.nav-link {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 15px 20px 10px;
+    color: #333;
+    transition: background-color 2s;
+}
+
+a.nav-link:hover {
+    background-color: #ccc;
+    transition: background-color 1s;
+}
+
+#navbar {
+    flex-shrink: 0;
+    padding: 10px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+code {
+    font-family: 'M PLUS Code Latin', sans-serif;
+    background: rgb(240, 218, 218);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+a.top-link {
+    position: fixed;
+    right: 20px;
+    bottom: -30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    border: 2px solid #333;
+    border-bottom: 0px;
+    padding: 5px 19px 10px;
+    border-radius: 50px 50px 0px 0px;
+    font-weight: bolder;
+    background-color: #fff;
+    opacity: 70%;
+    transition: bottom 1s, background-color 1s;
+}
+
+a.top-link:hover { 
+    bottom: 0px;
+    background-color: #ccc;
+    transition: bottom 1s, background-color 1s;
+}
+
+@media only screen and (max-width: 800px) {
+    body, nav {display: contents;}
+    .container {
+        display: block;
+        padding-top: 30px;
+    }
+    a.nav-link {
+        margin: 0px 10px;
+        font-size: 1rem;
+    }
+    nav header {display: none;}
+    header { 
+        font-size: 1.3em;
+        padding: 20px 0px 0px; 
+    }
+    p {font-size: 1em;}
+    #navbar {
+        display: flex;
+        flex-direction: initial;
+        padding: 0;
+        width: 100%;
+    }
+}

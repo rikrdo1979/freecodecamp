@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form</title>
+      <link href="styles.css" rel="stylesheet">
+   </head>
+   <body>
+      <h1 id="title">Survey From</h1>
+      <p id="description">Complete this survey to register!</p>
+      <form method="POST" action="#" id="survey-form">
+         <label id="name-label">Name</label>
+         <input type="text" name="name" id="name" placeholder="ex. John Doe" required>
+         <label id="email-label">email</label>
+         <input type="email" name="email" id="email" placeholder="ex. email@example.com" required>
+         <label id="number-label">Number</label>
+         <input type="number" min="0" max="9999999999999" name="number" id="number" placeholder="ex. +34 666 777 888">
+         <label id="dropdown-label">Where you here about us?</label>
+         <select id="dropdown">
+            <option selected="selected"> --- </option>
+            <option >Google</option>
+            <option >News</option>
+            <option >Friend</option>
+            <option >Youtube</option>
+         </select>
+         <label id="dropdown-label">Gender</label>
+         <fieldset>
+            <input name="gender" type="radio" value="nd"> <label class="radio">Not Defined</label>
+            <input name="gender" type="radio" value="f"> <label class="radio">Female</label>
+            <input name="gender" type="radio" value="m"> <label class="radio">Male</label>
+         </fieldset>
+         <label id="dropdown-label">Language</label>
+         <fieldset>
+            <input name="language" type="checkbox" value="en"><label class="radio">English</label>
+            <input name="language" type="checkbox" value="es"><label class="radio">Spanish</label>
+            <input name="language" type="checkbox" value="other"><label class="radio">Other</label>
+         </fieldset>
+         <textarea id="comments" placeholder="Type your comments..."></textarea>
+         <button type="submit" id="submit">Save</button>
+      </form>
+   </body>
+</html>
